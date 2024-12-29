@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { BasicAuthenticationService } from '../service/basicAuthentication.service';
 import { NgIf } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-hospital-services',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, RouterLink],
   templateUrl: './hospital-services.component.html',
   styleUrl: './hospital-services.component.css'
 })
