@@ -1,0 +1,21 @@
+.webSiteContainer
+{
+    height: 100vh;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: column;
+}
+  
+  .itemAppHeader {
+    top: 0;
+  }
+  
+  .itemRouterClass {
+    height: 100vh;
+    flex-grow: 1;
+    overflow: auto;
+  }
+  
+  .itemAppFooter {
+    bottom: 0;
+  }

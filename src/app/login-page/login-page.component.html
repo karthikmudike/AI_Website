@@ -1,0 +1,31 @@
+<div class="d-flex bodyPage" style="min-width: 500px;">
+  <div class="d-flex loginContainer shadow-lg p-3">
+    <form class="form" (ngSubmit)="basicLogInn(username,password)">
+      <p class="text-center display-4" style="color: blueviolet;">Loginn</p>
+      <br>
+      <div class="row justify-content-center">
+        <h6 *ngIf="!message" class="alert alert-warning">Invaild Credentials</h6>
+      </div>
+      <div class="row d-flex">
+        <p>Username: </p>
+      </div>
+      <div class="row d-flex mb-2">
+        <input class="form-control" name="username" [(ngModel)]="username" placeholder="Username" style="width: 250px;" required>
+      </div>
+      <div class="row d-flex">
+        <p>Password: </p>
+      </div>
+      <div class="row d-flex">
+        <input class="form-control col" type="password" name="password" [(ngModel)]="password" placeholder="Password"
+          style="width: 250px;" required>
+      </div>
+      <br>
+      <div class="row ">
+        <button (click)="basicLogInn(username,password)" class="btn btn-success mx-1">Log Inn</button>
+        <p class="m-1">or</p>
+        <button class="btn mx-1"
+        style=" background-color: blueviolet; color: white;">Creat a account</button>
+      </div>
+    </form>
+  </div>
+</div>

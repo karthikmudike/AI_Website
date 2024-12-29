@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark headerColor" style="font-size: medium;">
+  <div class="container-fluid">
+    <a class="navbar-brand display-4" style="color: white;" href="/hospitalService">Hospital</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a *ngIf="this.basicAuth.isUserLoggedIn()" routerLink="todo/{{this.basicAuth.getUsername()}}"
+            class="nav-link">Todo</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="/hospitalService">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/appointments">New Appointment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/CustomerSupport/2">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="d-flex">
+      <button *ngIf="!this.basicAuth.isUserLoggedIn()" class="btn btn-success" (click)="this.logInn()">Login</button>
+      <button *ngIf="this.basicAuth.isUserLoggedIn()" class="btn btn-danger"
+        (click)="this.basicAuth.loggedOut()">Logout</button>
+    </div>
+  </div>
+</nav>

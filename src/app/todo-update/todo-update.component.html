@@ -1,0 +1,18 @@
+<h1 class="p-4">Todo Update</h1>
+<br />
+<div class="container" style="width: 500px">
+  <fieldset>
+    <label>Enter the ID :</label>
+    <input class="form-control" [(ngModel)]="obj.id" />
+    <label>Description :</label>
+    <input type="text" [(ngModel)]="obj.username" class="form-control" />
+    <label>Date :</label>
+    <input class="form-control" type="date" [(ngModel)]="this.x"/>
+    <label>Is Completed :</label>
+    <input class="form-control" [(ngModel)]="obj.done" />
+  </fieldset>
+  <br />
+  <div>
+    <button class="btn btn-success" (click)="goBack()">Back</button>&nbsp;
+    <button class="btn btn-success" type="submit" (click)="generateTodo()">Submit</button>
+</div>
