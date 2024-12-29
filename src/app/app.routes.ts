@@ -17,21 +17,21 @@ import { MedicalChatAIComponent } from './medical-chat-ai/medical-chat-ai.compon
 import { AppointmentListComponent } from './appointment-list/appointment-list.component';
 
 export const routes: Routes = [
-    {path:"", component:HomePageComponent},
-    {path:"appointments", component:AppointmentComponent, canActivate: [RoutGaurdService]},
-    {path:"appointment/:id", component: AppointmentComponent, canActivate: [RoutGaurdService]},
-    {path:"hospitalService", component:HospitalServicesComponent},
-    {path:"login", component:LoginPageComponent},
-    {path:"logout", component:LogoutComponent},
-    {path:"appointmentList", component: AppointmentListComponent, canActivate: [RoutGaurdService]},
-    {path: "patientRecord", component: PatientRecordComponent, canActivate: [RoutGaurdService]},
-    {path: "findadoctor", component: FindaDoctorComponent, canActivate: [RoutGaurdService]},
-    {path: "BillPayment", component: BillPaymentComponent, canActivate: [RoutGaurdService]},
-    {path: "EmergencyCare", component: EmergencyCareComponent},
-    {path: "CustomerSupport/:id", component: CustomerCareComponent},
-    {path: "ChatAI", component: MedicalChatAIComponent, canActivate: [RoutGaurdService]},
-    {path:'todo', component: TodoComponent, canActivate: [RoutGaurdService]},
-    {path:'todo/:name', component: TodoComponent, canActivate: [RoutGaurdService]},
-    {path:"todoUpdate/:id", component: TodoUpdateComponent, canActivate: [RoutGaurdService]},
-    {path:'**', component: ErrorComponent}
+    { path: "", component: HomePageComponent },
+    { path: "appointments", component: AppointmentComponent, canActivate: [RoutGaurdService] },
+    { path: "appointment/:id", component: AppointmentComponent, canActivate: [RoutGaurdService] },
+    { path: "hospitalService", component: HospitalServicesComponent },
+    { path: "login", component: LoginPageComponent },
+    { path: "logout", component: LogoutComponent },
+    { path: "appointmentList", component: AppointmentListComponent, canActivate: [RoutGaurdService] },
+    { path: "patientRecord", component: PatientRecordComponent, canActivate: [RoutGaurdService] },
+    { path: "findadoctor", component: FindaDoctorComponent, canActivate: [RoutGaurdService] },
+    { path: "BillPayment", component: BillPaymentComponent, canActivate: [RoutGaurdService] },
+    { path: "EmergencyCare", component: EmergencyCareComponent },
+    { path: "CustomerSupport/:id", component: CustomerCareComponent },
+    { path: "ChatAI", component: MedicalChatAIComponent, canActivate: [RoutGaurdService] },
+    { path: 'todo', component: TodoComponent, canActivate: [RoutGaurdService] },
+    { path: 'todo/:name', component: TodoComponent, canActivate: [RoutGaurdService] },
+    { path: "todoUpdate/:id", component: TodoUpdateComponent, canActivate: [RoutGaurdService] },
+    { path: '**', component: ErrorComponent }
 ];
