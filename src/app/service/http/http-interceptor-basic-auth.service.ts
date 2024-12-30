@@ -2,7 +2,8 @@
 import { Injectable } from '@angular/core';
 import { HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { BasicAuthenticationService } from '../basicAuthentication.service';
-import { environment } from '../../../environments/environments';
+import { environment } from '../../../environments/environments.prod';
+
 
 
 @Injectable({
